@@ -48,8 +48,7 @@ const Index = ({ setDisabled }: { setDisabled: any }) => {
         // init.title = res.title;
         setInit({
           ...init,
-          title: res.title,
-          description: res.description,  
+          title: res.title, 
         })
         setUrl(res?.videoUrl);
         setImgs(res.images)
@@ -213,24 +212,7 @@ const Index = ({ setDisabled }: { setDisabled: any }) => {
             variant="filled"
           />
            
-          <TextField
-            // error={Boolean(formik.touched.price && formik.errors.price)}
-            fullWidth
-            multiline
-            required
-
-            rows={4}
-            // helperText={formik.touched.description && formik.errors.description}
-            label="Description*"
-            margin="normal"
-            name="description"
-            // onBlur={formik.handleBlur}
-            onChange={handleChange}
-            type="text"
-            value={init.description}
-            variant="filled"
-          />
-           
+ 
            
           <AddImage HandleImagesChange={handleImgChange} />
           {mode === 'edit' && <Typography>Note: adding new images might replace the old ones</Typography>}

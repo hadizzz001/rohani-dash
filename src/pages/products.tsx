@@ -111,13 +111,7 @@ const Page = () => {
 
                       <Typography sx={{fontWeight:'500'}}>
                                 {product?.title}
-                      </Typography>
-                      <Typography sx={{fontWeight:'500'}}>
-                                {product?.category}
-                      </Typography>
-                      <Typography sx={{color:'green',fontWeight:'500'}}>
-                                ${product?.price}
-                      </Typography>
+                      </Typography> 
                     </Box>
                       <Box className='flex gap-3' sx={{mt:'.35em'}}>
                         {/* <Button sx={{border:'1px solid',py:'.25em'}}>View</Button> */}
